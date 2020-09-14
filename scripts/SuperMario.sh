@@ -9,6 +9,7 @@
 
 TEXTURE=SUPERMARIO64
 TEXTURE2="SUPER MARIO 64"
+GITHUB=N64HDTextures
 
 INPUT=/tmp/$TEXTURE.sh.$$
 dialog --backtitle "$TEXTURE HD Textures Menu" \
@@ -30,14 +31,14 @@ case $menuitem in
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE2/"
         #echo "el directorio ha sido borrado"
         #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         mv $TEXTURE "$TEXTURE2"
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
         #echo "el directorio de la textura no existe"
         #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         mv $TEXTURE "$TEXTURE2"
         echo "$TEXTURE Textures Downloaded"
         sleep 4
