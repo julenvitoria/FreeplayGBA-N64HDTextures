@@ -22,18 +22,14 @@ case $menuitem in
     echo "Downloading $TEXTURE textures..."
     sleep 2
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
-        #echo "el directorio de la textura existe"
-        #sleep 2
         rm -r /home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE/
-        #echo "el directorio ha sido borrado"
-        #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures2/tree/master/hires_texture/$TEXTURE
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
         #echo "el directorio de la textura no existe"
         #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures2/tree/master/hires_texture/$TEXTURE
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     fi
