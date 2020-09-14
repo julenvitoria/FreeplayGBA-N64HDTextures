@@ -1,12 +1,8 @@
 #!/bin/bash
 #By julenvitoria
 
-#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo NAME_OF_TEXTURE_ON_GITHUB por el que sea necesario
+#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo NAME_OF_TEXTURE_ON_GITHUB por el que sea necesario y el de GITHUB por el github donde se encuentra
 #Si el directorio final contiene espacios en su nombre cambiar TEXTURE_DIRECTORY_WITH_SPACES sin quitar las comillas por el nombre con sus espacios para que se cambie a ese nombre
-#By julenvitoria
-
-#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo NAME_OF_TEXTURE_ON_GITHUB por el que sea necesario
-#Si el directorio final contiene espacios en su nombre cambiar TEXTURE_DIRECTORY_WITH_SPACES por el nombre con sus espacios para que se cambie a ese nombre
 
 #Change NAME_OF_TEXTURE_ON_GITHUB with the name of the texture on github you desire
 #Change TEXTURE_DIRECTORY_WITH_SPACES with the name of the final textures directory with spaces

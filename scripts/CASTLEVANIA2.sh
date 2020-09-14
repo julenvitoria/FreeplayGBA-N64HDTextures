@@ -1,10 +1,11 @@
 #!/bin/bash
 #By julenvitoria
 
-#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo TEXTURE por el que sea necesario
+#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo TEXTURE por el que sea necesario y el de GITHUB por el github donde se encuentra
 #NOTA: si el nombre de la textura tiene espacios usar el archivo skeleton2.sh
 
-#Change NAMEOFTEXTURE with the name of the texture you desire
+#Change NAMEOFTEXTURE with the name of the texture you desire amd GITHUB with the name of github
+
 TEXTURE=CASTLEVANIA2
 
 INPUT=/tmp/$TEXTURE.sh.$$

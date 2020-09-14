@@ -1,12 +1,8 @@
 #!/bin/bash
 #By julenvitoria
 
-#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo NAME_OF_TEXTURE_ON_GITHUB por el que sea necesario
+#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo NAME_OF_TEXTURE_ON_GITHUB por el que sea necesario y el de GITHUB por el github donde se encuentra
 #Si el directorio final contiene espacios en su nombre cambiar TEXTURE_DIRECTORY_WITH_SPACES sin quitar las comillas por el nombre con sus espacios para que se cambie a ese nombre
-#By julenvitoria
-
-#Para hacer que descargue cualquier otra textura simplemente cambiar el nombre del campo NAME_OF_TEXTURE_ON_GITHUB por el que sea necesario
-#Si el directorio final contiene espacios en su nombre cambiar TEXTURE_DIRECTORY_WITH_SPACES por el nombre con sus espacios para que se cambie a ese nombre
 
 #Change NAME_OF_TEXTURE_ON_GITHUB with the name of the texture on github you desire
 #Change TEXTURE_DIRECTORY_WITH_SPACES with the name of the final textures directory with spaces
@@ -34,14 +30,14 @@ case $menuitem in
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE2/"
         #echo "el directorio ha sido borrado"
         #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         mv $TEXTURE "$TEXTURE2"
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
         #echo "el directorio de la textura no existe"
         #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         mv $TEXTURE "$TEXTURE2"
         echo "$TEXTURE Textures Downloaded"
         sleep 4
