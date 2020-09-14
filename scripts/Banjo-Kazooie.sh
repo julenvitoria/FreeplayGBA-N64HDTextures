@@ -6,6 +6,7 @@
 
 #Change NAMEOFTEXTURE with the name of the texture you desire
 TEXTURE=Banjo-Kazooie
+GITHUB=N64HDTextures2
 
 INPUT=/tmp/$TEXTURE.sh.$$
 dialog --backtitle "$TEXTURE HD Textures Menu" \
@@ -23,13 +24,13 @@ case $menuitem in
     sleep 2
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
         rm -r /home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE/
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures2/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
         #echo "el directorio de la textura no existe"
         #sleep 2
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures2/tree/master/hires_texture/$TEXTURE
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     fi
