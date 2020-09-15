@@ -39,8 +39,8 @@ dialog --backtitle "N64 High Definition Textures Menu" \
    3 "Mario Kart 64" \
    4 "Super Mario Bros 64" \
    5 "Zelda: Majora's Mask" \
-   6 "Zelda: Ocarina Of Time"
-   7 "Banjo Kazooie"
+   6 "Zelda: Ocarina Of Time" \
+   7 "Banjo Kazooie" \
    8 "Castlevania Legacy Of Darkness" 2>"${INPUT}"
 menuitem=$(<"${INPUT}")
 case $menuitem in
