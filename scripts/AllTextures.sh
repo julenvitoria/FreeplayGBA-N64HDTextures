@@ -2,8 +2,11 @@
 #By julenvitoria
 
 #THIS IS AN EXAMPLE OF THIS SECTION
+#GITHUB=NAME_OF_GITHUB
 #TEXTURE=NAME_OF_TEXTURE
 
+GITHUB=N64HDTextures
+GITHUB2=N64HDTextures2
 TEXTURE01=MARIOKART64
 TEXTURE021=SUPERMARIO64
 TEXTURE022="SUPER MARIO 64"
@@ -35,11 +38,11 @@ sleep 2
     #TEXTURE01
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE01
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE01
         echo "$TEXTURE01 Textures Downloaded"
         sleep 4
     else
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE01
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE01
         echo "$TEXTURE01 Textures Downloaded"
         sleep 4
     fi
@@ -47,12 +50,12 @@ sleep 2
     #TEXTURE022
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE022/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE022/"
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE021
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE021
         mv $TEXTURE021 "$TEXTURE022" #USE IF ONLY NEEDED
         echo "$TEXTURE022 Textures Downloaded"
         sleep 4
     else
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE021
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE021
         mv $TEXTURE021 "$TEXTURE022" #USE IF ONLY NEEDED
         echo "$TEXTURE022 Textures Downloaded"
         sleep 4
@@ -62,12 +65,12 @@ sleep 2
     #TEXTURE032
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE032/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE032/"
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE031
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE031
         mv $TEXTURE031 "$TEXTURE032" #USE IF ONLY NEEDED
         echo "$TEXTURE032 Textures Downloaded"
         sleep 4
     else
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE031
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE031
         mv $TEXTURE031 "$TEXTURE032" #USE IF ONLY NEEDED
         echo "$TEXTURE032 Textures Downloaded"
         sleep 4
@@ -76,12 +79,12 @@ sleep 2
     #TEXTURE042
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE042/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE042/"
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE041
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE041
         mv $TEXTURE041 "$TEXTURE042" #USE IF ONLY NEEDED
         echo "$TEXTURE042 Textures Downloaded"
         sleep 4
     else
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE041
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE041
         mv $TEXTURE041 "$TEXTURE042" #USE IF ONLY NEEDED
         echo "$TEXTURE042 Textures Downloaded"
         sleep 4
@@ -90,11 +93,11 @@ sleep 2
     #TEXTURE05
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/"
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE05
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE05
         echo "$TEXTURE05 Textures Downloaded"
         sleep 4
     else
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE05
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE05
         echo "$TEXTURE05 Textures Downloaded"
         sleep 4
     fi
@@ -102,11 +105,11 @@ sleep 2
     #TEXTURE06
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/"
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE06
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE06
         echo "$TEXTURE06 Textures Downloaded"
         sleep 4
     else
-        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE06
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE06
         echo "$TEXTURE06 Textures Downloaded"
         sleep 4
     fi
