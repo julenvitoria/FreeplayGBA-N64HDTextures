@@ -23,30 +23,30 @@ sleep 2
 #    if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
 #        rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
 #        echo "$TEXTURE01 Textures Deleted"
-#        sleep 4
+#        sleep 1
 #    else
 #        echo "$TEXTURE01 Textures aren't present, nothing to delete."
-#        sleep 4
+#        sleep 1
 #    fi
 
     #TEXTURE01
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
         echo "$TEXTURE01 Textures Deleted"
-        sleep 4
+        sleep 1
     else
         echo "$TEXTURE01 Textures aren't present, nothing to delete."
-        sleep 4
+        sleep 1
     fi
 
     #TEXTURE022
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE022/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE022/"
         echo "$TEXTURE022 Textures Deleted."
-        sleep 4
+        sleep 1
     else
         echo "$TEXTURE022 Textures aren't present, nothing to delete."
-        sleep 4
+        sleep 1
 
     fi
 
@@ -54,40 +54,40 @@ sleep 2
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE032/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE032/"
         echo "$TEXTURE032 Textures Deleted."
-        sleep 4
+        sleep 1
     else
         echo "$TEXTURE032 Textures aren't present, nothing to delete."
-        sleep 4
+        sleep 1
     fi
 
     #TEXTURE042
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE042/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE042/"
         echo "$TEXTURE042 Textures Deleted."
-        sleep 4
+        sleep 1
     else
         echo "$TEXTURE042 Textures aren't present, nothing to delete."
-        sleep 4
+        sleep 1
     fi
     
     #TEXTURE05
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/"
         echo "$TEXTURE05 Textures Deleted"
-        sleep 4
+        sleep 1
     else
         echo "$TEXTURE05 Textures aren't present, nothing to delete."
-        sleep 4
+        sleep 1
     fi
 
     #TEXTURE06
     if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/" ]; then
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/"
         echo "$TEXTURE06 Textures Deleted"
-        sleep 4
+        sleep 1
     else
         echo "$TEXTURE06 Textures aren't present, nothing to delete."
-        sleep 4
+        sleep 1
     fi
     
     echo "APPLIED!!!"

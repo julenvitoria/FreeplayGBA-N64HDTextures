@@ -28,11 +28,11 @@ sleep 2
 #        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE01
 #        mv $TEXTURE01 "$TEXTURE2" #USE IF ONLY NEEDED
 #        echo "$TEXTURE01 Textures Downloaded"
-#        sleep 4
+#        sleep 1
 #    else
 #        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE01
 #        echo "$TEXTURE01 Textures Downloaded"
-#        sleep 4
+#        sleep 1
 #    fi
 
     #TEXTURE01
@@ -40,11 +40,11 @@ sleep 2
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE01
         echo "$TEXTURE01 Textures Downloaded"
-        sleep 4
+        sleep 1
     else
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE01
         echo "$TEXTURE01 Textures Downloaded"
-        sleep 4
+        sleep 1
     fi
 
     #TEXTURE022
@@ -53,12 +53,12 @@ sleep 2
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE021
         mv $TEXTURE021 "$TEXTURE022" #USE IF ONLY NEEDED
         echo "$TEXTURE022 Textures Downloaded"
-        sleep 4
+        sleep 1
     else
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE021
         mv $TEXTURE021 "$TEXTURE022" #USE IF ONLY NEEDED
         echo "$TEXTURE022 Textures Downloaded"
-        sleep 4
+        sleep 1
 
     fi
 
@@ -68,12 +68,12 @@ sleep 2
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE031
         mv $TEXTURE031 "$TEXTURE032" #USE IF ONLY NEEDED
         echo "$TEXTURE032 Textures Downloaded"
-        sleep 4
+        sleep 1
     else
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE031
         mv $TEXTURE031 "$TEXTURE032" #USE IF ONLY NEEDED
         echo "$TEXTURE032 Textures Downloaded"
-        sleep 4
+        sleep 1
     fi
 
     #TEXTURE042
@@ -82,12 +82,12 @@ sleep 2
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE041
         mv $TEXTURE041 "$TEXTURE042" #USE IF ONLY NEEDED
         echo "$TEXTURE042 Textures Downloaded"
-        sleep 4
+        sleep 1
     else
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE041
         mv $TEXTURE041 "$TEXTURE042" #USE IF ONLY NEEDED
         echo "$TEXTURE042 Textures Downloaded"
-        sleep 4
+        sleep 1
     fi
     
     #TEXTURE05
@@ -95,11 +95,11 @@ sleep 2
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/"
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE05
         echo "$TEXTURE05 Textures Downloaded"
-        sleep 4
+        sleep 1
     else
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE05
         echo "$TEXTURE05 Textures Downloaded"
-        sleep 4
+        sleep 1
     fi
 
     #TEXTURE06
@@ -107,11 +107,11 @@ sleep 2
         rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/"
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE06
         echo "$TEXTURE06 Textures Downloaded"
-        sleep 4
+        sleep 1
     else
         /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE06
         echo "$TEXTURE06 Textures Downloaded"
-        sleep 4
+        sleep 1
     fi
     
     echo "APPLIED!!!"

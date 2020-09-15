@@ -19,7 +19,6 @@
 #    #Return to main menu N64HDTextures
 #    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
 
-#TEXTURE=N64HDTextures
 TEXTURE03=MarioKart
 TEXTURE04=SuperMario
 TEXTURE05=ZELDAMAJORASMASK
@@ -27,6 +26,7 @@ TEXTURE06=THELEGENDOFZELDA
 TEXTURE07=Banjo-Kazooie
 TEXTURE08=CASTLEVANIA2
 
+TEXTURE=N64HDTextures
 INPUT=/tmp/$TEXTURE.sh.$$
 
 dialog --backtitle "N64 High Definition Textures Menu" \
@@ -140,7 +140,8 @@ This Message Will Close
         echo "Returning menu..."
         sleep 4
     fi
-
+    #Return to main menu N64HDTextures
+    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
   7)clear
     cd /home/pi
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
@@ -153,6 +154,8 @@ This Message Will Close
         echo "Returning menu..."
         sleep 4
     fi
+    #Return to main menu N64HDTextures
+    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
   8)clear
     cd /home/pi
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
