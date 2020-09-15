@@ -140,6 +140,7 @@ This Message Will Close
         echo "Returning menu..."
         sleep 4
     fi
+
   7)clear
     cd /home/pi
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
