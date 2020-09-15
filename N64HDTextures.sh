@@ -19,11 +19,13 @@
 #    #Return to main menu N64HDTextures
 #    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
 
-TEXTURE=N64HDTextures
+#TEXTURE=N64HDTextures
 TEXTURE03=MarioKart
 TEXTURE04=SuperMario
 TEXTURE05=ZELDAMAJORASMASK
 TEXTURE06=THELEGENDOFZELDA
+TEXTURE07=Banjo-Kazooie
+TEXTURE08=CASTLEVANIA2
 
 INPUT=/tmp/$TEXTURE.sh.$$
 
@@ -37,7 +39,9 @@ dialog --backtitle "N64 High Definition Textures Menu" \
    3 "Mario Kart 64" \
    4 "Super Mario Bros 64" \
    5 "Zelda: Majora's Mask" \
-   6 "Zelda: Ocarina Of Time" 2>"${INPUT}"
+   6 "Zelda: Ocarina Of Time"
+   7 "Banjo Kazooie"
+   8 "Castlevania Legacy Of Darkness" 2>"${INPUT}"
 menuitem=$(<"${INPUT}")
 case $menuitem in
   1)clear
@@ -131,6 +135,30 @@ This Message Will Close
         sleep 1
         #THE LEGEND OF ZELDA: OCARINA OF TIME
         wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE06.sh | bash
+    else
+        echo "Mupen64Plus is not installed"
+        echo "Returning menu..."
+        sleep 4
+    fi
+  7)clear
+    cd /home/pi
+    if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
+        echo "Please wait..."
+        sleep 1
+        #BANJO KAZOOIE
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE07.sh | bash
+    else
+        echo "Mupen64Plus is not installed"
+        echo "Returning menu..."
+        sleep 4
+    fi
+  8)clear
+    cd /home/pi
+    if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
+        echo "Please wait..."
+        sleep 1
+        #CASTLEVANIA LEGACY OF DARKNESS
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE08.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
