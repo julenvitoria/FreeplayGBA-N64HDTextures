@@ -11,6 +11,8 @@ TEXTURE031=THELEGENDOFZELDA
 TEXTURE032="THE LEGEND OF ZELDA"
 TEXTURE041=ZELDAMAJORASMASK
 TEXTURE042="ZELDA MAJORA'S MASK"
+TEXTURE05=Banjo-Kazooie
+TEXTURE06=CASTLEVANIA2
 
 clear
 if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/" ]; then
@@ -67,7 +69,27 @@ sleep 2
         echo "$TEXTURE042 Textures aren't present, nothing to delete."
         sleep 4
     fi
+    
+    #TEXTURE05
+    if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/" ]; then
+        rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/"
+        echo "$TEXTURE05 Textures Deleted"
+        sleep 4
+    else
+        echo "$TEXTURE05 Textures aren't present, nothing to delete."
+        sleep 4
+    fi
 
+    #TEXTURE06
+    if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/" ]; then
+        rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/"
+        echo "$TEXTURE06 Textures Deleted"
+        sleep 4
+    else
+        echo "$TEXTURE06 Textures aren't present, nothing to delete."
+        sleep 4
+    fi
+    
     echo "APPLIED!!!"
 else
     echo "Textures directory does't exist."

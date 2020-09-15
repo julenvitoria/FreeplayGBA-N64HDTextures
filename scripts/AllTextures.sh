@@ -11,6 +11,8 @@ TEXTURE031=THELEGENDOFZELDA
 TEXTURE032="THE LEGEND OF ZELDA"
 TEXTURE041=ZELDAMAJORASMASK
 TEXTURE042="ZELDA MAJORA'S MASK"
+TEXTURE05=Banjo-Kazooie
+TEXTURE06=CASTLEVANIA2
 
 clear
 if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/" ]; then
@@ -84,7 +86,31 @@ sleep 2
         echo "$TEXTURE042 Textures Downloaded"
         sleep 4
     fi
+    
+    #TEXTURE05
+    if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/" ]; then
+        rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE05/"
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE05
+        echo "$TEXTURE05 Textures Downloaded"
+        sleep 4
+    else
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE05
+        echo "$TEXTURE05 Textures Downloaded"
+        sleep 4
+    fi
 
+    #TEXTURE06
+    if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/" ]; then
+        rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE06/"
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE06
+        echo "$TEXTURE06 Textures Downloaded"
+        sleep 4
+    else
+        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE06
+        echo "$TEXTURE06 Textures Downloaded"
+        sleep 4
+    fi
+    
     echo "APPLIED!!!"
 else
     echo "Textures directory does't exist."
