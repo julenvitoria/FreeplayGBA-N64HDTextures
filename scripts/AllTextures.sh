@@ -116,7 +116,8 @@ sleep 2
     
     echo "APPLIED!!!"
 else
-    echo "Textures directory does't exist."
+    echo "Textures directory does't exist"
+    echo "or Mupen64Plus isn't installed."
     echo "Aborting..."
     sleep 4
 fi
