@@ -20,24 +20,18 @@ menuitem=$(<"${INPUT}")
 case $menuitem in
   1)clear
     cd /home/$USER/RetroPie
-    git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/
     echo "Downloading $TEXTURE textures..."
     sleep 2
+    git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/
     if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
-        #echo "el directorio de la textura existe"
-        #sleep 2
         rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/
-        #echo "el directorio ha sido borrado"
-        #sleep 2
-        #/home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
         cp -R FreeplayGBA-N64HDTextures/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
         rm -R FreeplayGBA-N64HDTextures
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
-        #echo "el directorio de la textura no existe"
-        #sleep 2
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
+        cp -R FreeplayGBA-N64HDTextures/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
+        rm -R FreeplayGBA-N64HDTextures
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     fi
