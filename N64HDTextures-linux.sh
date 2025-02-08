@@ -1,11 +1,11 @@
 #!/bin/bash
-#By julenvitoria
+#By JulenSR
 
 #THIS IS AN EXAMPLE
 #
 #TEXTURE01=MarioKart
 #  3)clear
-#    cd /home/pi
+#    cd /home/$USER
 #    if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
 #        echo "Please wait..."
 #        sleep 1
@@ -17,7 +17,7 @@
 #        sleep 4
 #    fi
 #    #Return to main menu N64HDTextures
-#    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+#    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
 
 TEXTURE03=MarioKart
 TEXTURE04=SuperMario
@@ -31,7 +31,7 @@ INPUT=/tmp/$TEXTURE.sh.$$
 
 if [ ! -d /home/$USER/.local/share/mupen64plus/hires_texture/ ]; then
     mkdir /home/$USER/.local/share/mupen64plus/hires_texture/
-fi 
+fi
 
 dialog --backtitle "N64 High Definition Textures Menu" \
 --title "Game Textures" \
@@ -49,7 +49,7 @@ dialog --backtitle "N64 High Definition Textures Menu" \
 menuitem=$(<"${INPUT}")
 case $menuitem in
   1)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 2
@@ -68,9 +68,9 @@ This Message Will Close
     fi
     clear;
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   2)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please Wait..."
         sleep 2
@@ -89,9 +89,9 @@ This Message Will Close
     fi
     clear;
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   3)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 1
@@ -103,9 +103,9 @@ This Message Will Close
         sleep 4
     fi
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   4)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 1
@@ -117,9 +117,9 @@ This Message Will Close
         sleep 4
     fi
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   5)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 1
@@ -131,9 +131,9 @@ This Message Will Close
         sleep 4
     fi
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   6)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 1
@@ -145,9 +145,9 @@ This Message Will Close
         sleep 4
     fi
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   7)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 1
@@ -159,9 +159,9 @@ This Message Will Close
         sleep 4
     fi
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
   8)clear
-    cd /home/pi
+    cd /home/$USER
     if [ -d "/opt/retropie/emulators/mupen64plus/" ]; then
         echo "Please wait..."
         sleep 1
@@ -173,5 +173,5 @@ This Message Will Close
         sleep 4
     fi
     #Return to main menu N64HDTextures
-    /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh ;;
+    /home/$USER/RetroPie/retropiemenu/N64HDTextures.sh ;;
 esac
