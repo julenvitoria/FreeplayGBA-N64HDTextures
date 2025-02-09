@@ -91,8 +91,9 @@ sleep 2
     fi
     
     echo "APPLIED!!!"
+	sleep 2
 else
     echo "Textures directory does't exist."
     echo "Aborting..."
-    sleep 4
+    sleep 2
 fi
