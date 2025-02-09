@@ -31,13 +31,15 @@ case $menuitem in
         rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/
         cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
         rm -R FreeplayGBA-$GITHUB
+		echo ""
         echo "$TEXTURE Textures Downloaded"
-        sleep 4
+        sleep 2
     else
         cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
         rm -R FreeplayGBA-$GITHUB
+		echo ""
         echo "$TEXTURE Textures Downloaded"
-        sleep 4
+        sleep 2
     fi
     clear;
     dialog --infobox "  Textures installed
@@ -48,17 +50,18 @@ This Message Will Close
   2)clear
     echo "Deleting $TEXTURE HD Textures"
     echo "Please Wait..."
-    sleep 2
+	echo ""
+    sleep 1
     
     if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
         echo "Textures directory detected"
         echo "Deleting..."
-        sleep 2
+        sleep 1
         rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/"
     else
         echo "Textures directory doesn't exist"
         echo "Nothing to delete..."
-        sleep 2
+        sleep 1
     fi
     sleep 2 ;
 dialog --infobox "      Applied!!!

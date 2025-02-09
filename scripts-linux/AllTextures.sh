@@ -39,11 +39,13 @@ if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
 	cp -R FreeplayGBA-N64HDTextures2/hires_texture/$TEXTURE06 /home/$USER/.local/share/mupen64plus/hires_texture/
     rm -R FreeplayGBA-$GITHUB
 	rm -R FreeplayGBA-$GITHUB2
-    echo "Textures Downloaded"
+	echo ""
+    echo "All textures Downloaded"
     sleep 4
 else
     echo "Textures directory does't exist"
     echo "or Mupen64Plus isn't installed."
+	echo ""
     echo "Aborting..."
     sleep 2
 fi
