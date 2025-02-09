@@ -25,16 +25,16 @@ case $menuitem in
     if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-N64HDTextures/" ]; then
        rm -R /home/$USER/RetroPie/FreeplayGBA-N64HDTextures
     fi
-    git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/
+    git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB/
     if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
         rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/
-        cp -R FreeplayGBA-N64HDTextures/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
-        rm -R FreeplayGBA-N64HDTextures
+        cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
+        rm -R FreeplayGBA-$GITHUB
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
-        cp -R FreeplayGBA-N64HDTextures/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
-        rm -R FreeplayGBA-N64HDTextures
+        cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
+        rm -R FreeplayGBA-$GITHUB
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     fi
