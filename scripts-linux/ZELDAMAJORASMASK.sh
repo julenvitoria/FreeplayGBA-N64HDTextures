@@ -8,7 +8,7 @@
 #Change TEXTURE_DIRECTORY_WITH_SPACES with the name of the final textures directory with spaces
 
 TEXTURE=ZELDAMAJORASMASK
-TEXTURE2="ZELDA MAJORA\'S MASK"
+TEXTURE2="ZELDA MAJORA'S MASK"
 GITHUB=N64HDTextures
 
 INPUT=/tmp/$TEXTURE.sh.$$
