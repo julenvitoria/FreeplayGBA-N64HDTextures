@@ -18,103 +18,21 @@ TEXTURE05=Banjo-Kazooie
 TEXTURE06=CASTLEVANIA2
 
 clear
+cd /home/$USER/RetroPie
+if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-N64HDTextures/" ]; then
+	rm -R /home/$USER/RetroPie/FreeplayGBA-N64HDTextures
+fi
+git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/
+git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures2/
+
 if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
-cd /home/$USER/.local/share/mupen64plus/hires_texture/
-echo "Downloading All Textures..."
-sleep 2
-#THIS IS AN EXAMPLE OF THIS SECTION
-#    if [ -d "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
-#        rm -r "/home/pi/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
-#        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE01
-#        mv $TEXTURE01 "$TEXTURE2" #USE IF ONLY NEEDED
-#        echo "$TEXTURE01 Textures Downloaded"
-#        sleep 1
-#    else
-#        /home/pi/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/tree/master/hires_texture/$TEXTURE01
-#        echo "$TEXTURE01 Textures Downloaded"
-#        sleep 1
-#    fi
-
-    #TEXTURE01
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE01
-        echo "$TEXTURE01 Textures Downloaded"
-        sleep 1
-    else
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE01
-        echo "$TEXTURE01 Textures Downloaded"
-        sleep 1
-    fi
-
-    #TEXTURE022
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE022/" ]; then
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE022/"
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE021
-        mv $TEXTURE021 "$TEXTURE022" #USE IF ONLY NEEDED
-        echo "$TEXTURE022 Textures Downloaded"
-        sleep 1
-    else
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE021
-        mv $TEXTURE021 "$TEXTURE022" #USE IF ONLY NEEDED
-        echo "$TEXTURE022 Textures Downloaded"
-        sleep 1
-
-    fi
-
-    #TEXTURE032
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE032/" ]; then
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE032/"
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE031
-        mv $TEXTURE031 "$TEXTURE032" #USE IF ONLY NEEDED
-        echo "$TEXTURE032 Textures Downloaded"
-        sleep 1
-    else
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE031
-        mv $TEXTURE031 "$TEXTURE032" #USE IF ONLY NEEDED
-        echo "$TEXTURE032 Textures Downloaded"
-        sleep 1
-    fi
-
-    #TEXTURE042
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE042/" ]; then
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE042/"
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE041
-        mv $TEXTURE041 "$TEXTURE042" #USE IF ONLY NEEDED
-        echo "$TEXTURE042 Textures Downloaded"
-        sleep 1
-    else
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE041
-        mv $TEXTURE041 "$TEXTURE042" #USE IF ONLY NEEDED
-        echo "$TEXTURE042 Textures Downloaded"
-        sleep 1
-    fi
-    
-    #TEXTURE05
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE05/" ]; then
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE05/"
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE05
-        echo "$TEXTURE05 Textures Downloaded"
-        sleep 1
-    else
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE05
-        echo "$TEXTURE05 Textures Downloaded"
-        sleep 1
-    fi
-
-    #TEXTURE06
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE06/" ]; then
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE06/"
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE06
-        echo "$TEXTURE06 Textures Downloaded"
-        sleep 1
-    else
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/tree/master/hires_texture/$TEXTURE06
-        echo "$TEXTURE06 Textures Downloaded"
-        sleep 1
-    fi
-    
-    echo "APPLIED!!!"
+    rm -r /home/$USER/.local/share/mupen64plus/hires_texture/
+    cp -R FreeplayGBA-N64HDTextures/hires_texture/* /home/$USER/.local/share/mupen64plus/hires_texture/
+	cp -R FreeplayGBA-N64HDTextures/hires_texture2/* /home/$USER/.local/share/mupen64plus/hires_texture/
+    rm -R FreeplayGBA-N64HDTextures
+	rm -R FreeplayGBA-N64HDTextures2
+    echo "Textures Downloaded"
+    sleep 4
 else
     echo "Textures directory does't exist"
     echo "or Mupen64Plus isn't installed."

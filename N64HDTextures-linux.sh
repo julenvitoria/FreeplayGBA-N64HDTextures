@@ -30,7 +30,13 @@ TEXTURE=N64HDTextures
 INPUT=/tmp/$TEXTURE.sh.$$
 
 if [ ! -d /home/$USER/.local/share/mupen64plus/hires_texture/ ]; then
-    mkdir /home/$USER/.local/share/mupen64plus/hires_texture/
+    #mkdir /home/$USER/.local/share/mupen64plus/hires_texture/
+	echo "Directory for HD textures located at /home/$USER/.local/share/mpen64plus/hires_textures/"
+	echo "isn't created or mupen64plus isn't installed."
+	echo ""
+	echo "Please install mupen64plus or create hires_textures directory."
+	sleep 6
+	exit 0
 fi
 
 dialog --backtitle "N64 High Definition Textures Menu" \
