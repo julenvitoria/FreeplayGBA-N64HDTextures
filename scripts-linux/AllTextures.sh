@@ -19,18 +19,25 @@ TEXTURE06=CASTLEVANIA2
 
 clear
 cd /home/$USER/RetroPie
-if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-N64HDTextures/" ]; then
-	rm -R /home/$USER/RetroPie/FreeplayGBA-N64HDTextures
+if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB/" ]; then
+	rm -R /home/$USER/RetroPie/FreeplayGBA-$GITHUB
 fi
-git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/
-git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures2/
+if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB2/" ]; then
+	rm -R /home/$USER/RetroPie/FreeplayGBA-$GITHUB2
+fi
+git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB/
+git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/
 
 if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
-    rm -r /home/$USER/.local/share/mupen64plus/hires_texture/
-    cp -R FreeplayGBA-N64HDTextures/hires_texture/* /home/$USER/.local/share/mupen64plus/hires_texture/
-	cp -R FreeplayGBA-N64HDTextures/hires_texture2/* /home/$USER/.local/share/mupen64plus/hires_texture/
-    rm -R FreeplayGBA-N64HDTextures
-	rm -R FreeplayGBA-N64HDTextures2
+    rm -R /home/$USER/.local/share/mupen64plus/hires_texture/*
+    cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE01 /home/$USER/.local/share/mupen64plus/hires_texture/
+	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE021 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE022"
+	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE031 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE032"
+	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE041 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE042"
+	cp -R FreeplayGBA-N64HDTextures2/hires_texture/TEXTURE05 /home/$USER/.local/share/mupen64plus/hires_texture/
+	cp -R FreeplayGBA-N64HDTextures2/hires_texture/TEXTURE06 /home/$USER/.local/share/mupen64plus/hires_texture/
+    rm -R FreeplayGBA-$GITHUB
+	rm -R FreeplayGBA-$GITHUB2
     echo "Textures Downloaded"
     sleep 4
 else
