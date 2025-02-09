@@ -10,7 +10,7 @@
 #        echo "Please wait..."
 #        sleep 1
 #        #MARIO KART 64
-#        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE01.sh | bash
+#        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE01.sh | bash
 #    else
 #        echo "Mupen64Plus is not installed"
 #        echo "Returning menu..."
@@ -61,7 +61,7 @@ case $menuitem in
         echo "Please wait..."
         sleep 2
         #Download AllTextures
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/AllTextures.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/AllTextures.sh | bash
         dialog --infobox "All Textures downloaded
 
 This Message Will Close
@@ -82,7 +82,7 @@ This Message Will Close
         echo "Please Wait..."
         sleep 2
         #Download DeleteAll
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/DeleteAll.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/DeleteAll.sh | bash
         dialog --infobox "  All Textures deleted
 
 This Message Will Close
@@ -103,7 +103,7 @@ This Message Will Close
         echo "Please wait..."
         sleep 1
         #MARIO KART 64
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE03.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE03.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
@@ -117,7 +117,7 @@ This Message Will Close
         echo "Please wait..."
         sleep 1
         #SUPER MARIO 64
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE04.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE04.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
@@ -131,7 +131,7 @@ This Message Will Close
         echo "Please wait..."
         sleep 1
         #THE LEGEND OF ZELDA: MAJORA'S MASK
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE05.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE05.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
@@ -145,7 +145,7 @@ This Message Will Close
         echo "Please wait..."
         sleep 1
         #THE LEGEND OF ZELDA: OCARINA OF TIME
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE06.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE06.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
@@ -159,7 +159,7 @@ This Message Will Close
         echo "Please wait..."
         sleep 1
         #BANJO KAZOOIE
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE07.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE07.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
@@ -173,7 +173,7 @@ This Message Will Close
         echo "Please wait..."
         sleep 1
         #CASTLEVANIA LEGACY OF DARKNESS
-        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts/$TEXTURE08.sh | bash
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/scripts-linux/$TEXTURE08.sh | bash
     else
         echo "Mupen64Plus is not installed"
         echo "Returning menu..."
