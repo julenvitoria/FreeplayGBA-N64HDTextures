@@ -8,7 +8,7 @@
 #Change TEXTURE_DIRECTORY_WITH_SPACES with the name of the final textures directory with spaces
 
 TEXTURE=ZELDAMAJORASMASK
-TEXTURE2="ZELDA MAJORA'S MASK"
+TEXTURE2="ZELDA MAJORA\'S MASK"
 GITHUB=N64HDTextures
 
 INPUT=/tmp/$TEXTURE.sh.$$
@@ -31,12 +31,12 @@ case $menuitem in
     git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB/
     if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
         rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/
-        cp -R FreeplayGBA-$/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2
+        cp -R FreeplayGBA-$/hires_texture/$TEXTURE "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2"
         rm -R FreeplayGBA-$GITHUB
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
-        cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2
+        cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2"
         rm -R FreeplayGBA-$GITHUB
         echo "$TEXTURE Textures Downloaded"
         sleep 4
