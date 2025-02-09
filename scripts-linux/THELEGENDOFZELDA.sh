@@ -22,24 +22,22 @@ dialog --backtitle "$TEXTURE HD Textures Menu" \
 menuitem=$(<"${INPUT}")
 case $menuitem in
   1)clear
-    cd /home/$USER/.local/share/mupen64plus/hires_texture/
+    cd /home/$USER/RetroPie
     echo "Downloading $TEXTURE textures..."
     sleep 2
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2/" ]; then
-        #echo "el directorio de la textura existe"
-        #sleep 2
-        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2/"
-        #echo "el directorio ha sido borrado"
-        #sleep 2
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
-        mv $TEXTURE "$TEXTURE2"
+    if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-N64HDTextures/" ]; then
+       rm -R /home/$USER/RetroPie/FreeplayGBA-N64HDTextures
+    fi
+    git clone https://github.com/julenvitoria/FreeplayGBA-N64HDTextures/
+    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
+        rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/
+        cp -R FreeplayGBA-N64HDTextures/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
+        rm -R FreeplayGBA-N64HDTextures
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     else
-        #echo "el directorio de la textura no existe"
-        #sleep 2
-        /home/$USER/RetroPie/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-$GITHUB/tree/master/hires_texture/$TEXTURE
-        mv $TEXTURE "$TEXTURE2"
+        cp -R FreeplayGBA-N64HDTextures/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/
+        rm -R FreeplayGBA-N64HDTextures
         echo "$TEXTURE Textures Downloaded"
         sleep 4
     fi
