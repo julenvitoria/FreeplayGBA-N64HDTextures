@@ -87,7 +87,7 @@ if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
         echo "$TEXTURE06 Textures aren't present, nothing to delete."
         sleep 1
     fi
-    
+    echo ""
     echo "APPLIED!!!"
 	sleep 2
 else
