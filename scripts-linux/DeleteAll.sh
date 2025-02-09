@@ -5,29 +5,27 @@
 #TEXTURE=NAME_OF_TEXTURE
 
 TEXTURE01=MARIOKART64
-TEXTURE021=SUPERMARIO64
 TEXTURE022="SUPER MARIO 64"
-TEXTURE031=THELEGENDOFZELDA
 TEXTURE032="THE LEGEND OF ZELDA"
-TEXTURE041=ZELDAMAJORASMASK
 TEXTURE042="ZELDA MAJORA'S MASK"
 TEXTURE05=Banjo-Kazooie
 TEXTURE06=CASTLEVANIA2
 
 clear
 if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
-cd /home/$USER/.local/share/mupen64plus/hires_texture/
-echo "Deleting All Textures..."
-sleep 2
-#THIS IS AN EXAMPLE OF THIS SECTION
-#    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
-#        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
-#        echo "$TEXTURE01 Textures Deleted"
-#        sleep 1
-#    else
-#        echo "$TEXTURE01 Textures aren't present, nothing to delete."
-#        sleep 1
-#    fi
+    cd /home/$USER/.local/share/mupen64plus/hires_texture/
+    echo "Deleting All Textures..."
+	echo ""
+    sleep 2
+    #THIS IS AN EXAMPLE OF THIS SECTION
+    #    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then
+    #        rm -r "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/"
+    #        echo "$TEXTURE01 Textures Deleted"
+    #        sleep 1
+    #    else
+    #        echo "$TEXTURE01 Textures aren't present, nothing to delete."
+    #        sleep 1
+    #    fi
 
     #TEXTURE01
     if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE01/" ]; then

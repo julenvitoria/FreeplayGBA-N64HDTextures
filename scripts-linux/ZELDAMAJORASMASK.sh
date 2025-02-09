@@ -25,7 +25,7 @@ case $menuitem in
     cd /home/$USER/RetroPie
     echo "Downloading $TEXTURE textures..."
     sleep 2
-    if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB/" ]; then
+    if [ -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB/" ]; then
        rm -R /home/$USER/RetroPie/FreeplayGBA-$GITHUB
     fi
     git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB/

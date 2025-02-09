@@ -19,17 +19,18 @@ TEXTURE06=CASTLEVANIA2
 
 clear
 cd /home/$USER/RetroPie
-if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB/" ]; then
+if [ -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB/" ]; then
 	rm -R /home/$USER/RetroPie/FreeplayGBA-$GITHUB
 fi
-if [ ! -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB2/" ]; then
+if [ -d "/home/$USER/RetroPie/FreeplayGBA-$GITHUB2/" ]; then
 	rm -R /home/$USER/RetroPie/FreeplayGBA-$GITHUB2
 fi
 git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB/
 git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB2/
 
 if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
-    rm -R /home/$USER/.local/share/mupen64plus/hires_texture/*
+    rm -R /home/$USER/.local/share/mupen64plus/hires_texture
+	mkdir /home/$USER/.local/share/mupen64plus/hires_texture
     cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE01 /home/$USER/.local/share/mupen64plus/hires_texture/
 	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE021 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE022"
 	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE031 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE032"
