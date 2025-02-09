@@ -34,8 +34,8 @@ if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/" ]; then
 	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE021 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE022"
 	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE031 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE032"
 	cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE041 "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE042"
-	cp -R FreeplayGBA-N64HDTextures2/hires_texture/TEXTURE05 /home/$USER/.local/share/mupen64plus/hires_texture/
-	cp -R FreeplayGBA-N64HDTextures2/hires_texture/TEXTURE06 /home/$USER/.local/share/mupen64plus/hires_texture/
+	cp -R FreeplayGBA-N64HDTextures2/hires_texture/$TEXTURE05 /home/$USER/.local/share/mupen64plus/hires_texture/
+	cp -R FreeplayGBA-N64HDTextures2/hires_texture/$TEXTURE06 /home/$USER/.local/share/mupen64plus/hires_texture/
     rm -R FreeplayGBA-$GITHUB
 	rm -R FreeplayGBA-$GITHUB2
     echo "Textures Downloaded"
