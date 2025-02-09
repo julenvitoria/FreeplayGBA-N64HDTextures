@@ -29,8 +29,8 @@ case $menuitem in
        rm -R /home/$USER/RetroPie/FreeplayGBA-$GITHUB
     fi
     git clone https://github.com/julenvitoria/FreeplayGBA-$GITHUB/
-    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/" ]; then
-        rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE/
+    if [ -d "/home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2/" ]; then
+        rm -r /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2/
         cp -R FreeplayGBA-$GITHUB/hires_texture/$TEXTURE /home/$USER/.local/share/mupen64plus/hires_texture/$TEXTURE2
         rm -R FreeplayGBA-$GITHUB
         echo "$TEXTURE Textures Downloaded"
