@@ -29,6 +29,7 @@ TEXTURE08=CASTLEVANIA2
 TEXTURE=N64HDTextures
 INPUT=/tmp/$TEXTURE.sh.$$
 
+clear
 if [ ! -d /home/$USER/.local/share/mupen64plus/hires_texture/ ]; then
     #mkdir /home/$USER/.local/share/mupen64plus/hires_texture/
 	echo "Directory for HD textures located at /home/$USER/.local/share/mpen64plus/hires_textures/"
