@@ -44,7 +44,7 @@ dialog --backtitle "N64 High Definition Textures Menu" \
 --title "Game Textures" \
 --ok-label Apply \
 --cancel-label Exit \
---menu "Select with up/down and accept with button A: " 12 40 5 \
+--menu "Select with up/down and accept with button A: " 16 60 8 \
    1 "Download All Textures" \
    2 "Delete All Textures" \
    3 "Mario Kart 64" \
